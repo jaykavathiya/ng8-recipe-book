@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng8-recipe-book';
+  loadedFeature = 'recipes';
+
+	onNavigate(eventData: string) {
+		this.loadedFeature = eventData;
+  }
 }
